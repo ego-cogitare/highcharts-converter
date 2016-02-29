@@ -1,16 +1,21 @@
-Requirements:
+##Requirements:
   1. NodeJS
   2. PhantomJS
 
-Start highcharts server:
+##Start highcharts server:
+  ```shell 
   phantomjs highcharts-convert.js -host 0.0.0.0 -port 3003
+  ```
 
-Start highmaps server:
+##Start highmaps server:
+  ```shell
   phantomjs highmaps-convert.js -host 0.0.0.0 -port 3005
+  ```
 
-Render graph (base64 string will be returned):
+##Render graph (base64 string will be returned):
   
-  Render world graph example:
+  ###Render world graph example:
+  ```php
     $this->HCConverter->seriePush([
         'data' => $graphData[$tabKey],
         'joinBy' => 'hc-key',
@@ -20,8 +25,9 @@ Render graph (base64 string will be returned):
         'dataLabels' => ['enabled' => false]
     ]);
     $HCConverter->getGraphImage(HCConverter::$GRAPH_TEMPLATE_SMALL), null, null, 35, 12, 'PNG');
-    
-  Render highchart graph example (we can pass callback function to modify input graph data array):
+  ```  
+  ##Render highchart graph example (we can pass callback function to modify input graph data array):
+    ```php
     $this->HCConverter->seriePush(
         [
             'data'      => $data['graphData'],
@@ -36,4 +42,5 @@ Render graph (base64 string will be returned):
             ];
         }
     );
+    ```
 
