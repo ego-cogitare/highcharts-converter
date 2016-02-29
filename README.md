@@ -14,7 +14,7 @@ phantomjs highmaps-convert.js -host 0.0.0.0 -port 3005
 
 ###Render graph (base64 string will be returned):
   
-###Render world graph example:
+#####Render world graph example:
 ```php
 $this->HCConverter->seriePush([
     'data' => $graphData[$tabKey],
@@ -26,7 +26,7 @@ $this->HCConverter->seriePush([
 ]);
 $HCConverter->getGraphImage(HCConverter::$GRAPH_TEMPLATE_SMALL), null, null, 35, 12, 'PNG');
 ```  
-###Render highchart graph example (we can pass callback function to modify input graph data array):
+#####Render highchart graph example (we can pass callback function to modify input graph data array):
 ```php
 $this->HCConverter->seriePush(
     [
