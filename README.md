@@ -13,6 +13,10 @@ phantomjs highmaps-convert.js -host 0.0.0.0 -port 3005
 ```
 
 ###Render graph (base64 string will be returned):
+#####Creating highcharts converter class instance:
+```php
+$this->HCConverter = new HCConverter(HIGHCHARTS_CONVERTER_URL, HIGHMAPS_CONVERTER_URL);
+```
   
 #####Render world graph example:
 ```php
