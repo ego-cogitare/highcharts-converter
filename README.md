@@ -3,12 +3,12 @@
   2. PhantomJS
 
 ###Start highcharts server:
-```shell 
+```{r, engine='bash', count_lines}
 phantomjs highcharts-convert.js -host 0.0.0.0 -port 3003
   ```
 
 ###Start highmaps server:
-```shell
+```{r, engine='bash', count_lines}
 phantomjs highmaps-convert.js -host 0.0.0.0 -port 3005
 ```
 
